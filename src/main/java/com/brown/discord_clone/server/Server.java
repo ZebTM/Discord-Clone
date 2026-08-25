@@ -17,5 +17,10 @@ import lombok.Setter;
 @Builder
 @Entity 
 public class Server {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private String name;
+    private Integer ownerId;
+    
 }

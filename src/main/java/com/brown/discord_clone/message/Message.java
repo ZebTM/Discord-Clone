@@ -21,8 +21,8 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String content;
-    private String senderId;
-    private String channelId;
+    private Integer senderId;
+    private Integer channelId;
     private String serverId;
     private long timestamp;
 }
